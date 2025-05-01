@@ -1,7 +1,6 @@
+# **Fine-tuning BART Base and BART Large CNN for Text Summarization on French News Articles**
 
-# 📘 Instructions for Training and Evaluating BART Models
-
-![Model architecture](intro_img.png)
+![intro](intro_img.png)
 
 Here is my fine-tuning project using the BART Base and BART Large CNN models for abstractive summarization of news articles.
 I was able to perform the training computations on the Mesonet supercomputer, which has the following specifications:
@@ -20,20 +19,26 @@ Due to time constraints, I was not able to observe a clear start of fine-tuning 
 That said, on evaluation with French test data — summaries of news articles — the ROUGE scores I obtained were slightly better than those from Facebook’s original models.
 (Note: I'm not claiming my model is better than Facebook's 😉)
 
+I also referred to Facebook’s research paper to better understand the BART architecture.
+I highly recommend reading it.
 
+![paper](research_paper.jpg)
+
+https://arxiv.org/pdf/1910.13461
 
 ## training results and scoring for fine tuning BART Base (with 392 902 summaries)
 
-![Model architecture](plots_bart_Base/val_rouge_scores.png)
-![Model architecture](plots_bart_Base/Comparison_val_score.png)
-![Model architecture](plots_bart_Base/scores_rouge_bart_base.png)
+![plt 1](plots_bart_Base/val_rouge_scores.png)
+![plt 2](plots_bart_Base/Comparison_val_score.png)
+![plt 3](plots_bart_Base/scores_rouge_bart_base.png)
 
 ## training results and scoring for fine tuning BART Large-CNN (with 392 902 summaries)
 
-![Model architecture](plots_bart_Large/val_rouge_scores.png)
-![Model architecture](plots_bart_Large/Comparison_val_score.png)
-![Model architecture](plots_bart_Large/scores_rouge_bart_large.png)
+![plt 4](plots_bart_Large/val_rouge_scores.png)
+![plt 5](plots_bart_Large/Comparison_val_score.png)
+![plt 6](plots_bart_Large/scores_rouge_bart_large.png)
 
+# 📘 Instructions for Training and Evaluating BART Models
 
 ## 📥 Downloading the Training Dataset
 
