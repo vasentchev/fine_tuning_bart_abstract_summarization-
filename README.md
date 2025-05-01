@@ -1,9 +1,17 @@
 
-# 📘 Instructions pour l'entraînement et l'évaluation des modèles BART
+# 📘 Instructions for Training and Evaluating BART Models
 
-## ✅ 1. Création de l’environnement virtuel
+## 📥 Downloading the Training Dataset
 
-Utilisez `pyenv` pour créer un environnement Python **3.12.3** :
+```text
+Download the [corpus.csv](https://www.kaggle.com/datasets/manueldesiretaira/dataset-for-text-summarization/data) file from Kaggle and place it at the root of the project directory.  
+You can then proceed with training and evaluation.
+```
+
+
+## ✅ 1. Creating the Virtual Environment
+
+Use `pyenv` to create a Python **3.12.3** virtual environment:
 
 ```bash
 pyenv install 3.12.3
@@ -13,9 +21,9 @@ pyenv activate bart_env
 
 ---
 
-## 📦 2. Installation des dépendances
+## 📦 2. Installing Dependencies
 
-Installez les dépendances nécessaires via `requirements.txt` :
+Install the required dependencies using `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
@@ -23,21 +31,21 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 3. Modèle BART Base
+## 🚀 3. BART Base Model
 
-### 🔧 Entraînement (10 époques)
+### 🔧 Training (10 epochs)
 
 ```bash
 python train_bart_base.py
 ```
 
-### 📊 Évaluation (ROUGE scores)
+### 📊 Evaluation (ROUGE scores)
 
 ```bash
 python test_bart_base.py
 ```
 
-📂 Les graphiques d'entrainement et de performance ROUGE seront automatiquement sauvegardés dans le dossier :
+📂 Training and ROUGE performance plots will be automatically saved in the folder:
 
 ```text
 plots_bart_Base/
@@ -45,22 +53,25 @@ plots_bart_Base/
 
 ---
 
-## 🚀 4. Modèle BART Large
+## 🚀 4. BART Large Model
 
-### 🔧 Entraînement (3 époques)
+### 🔧 Training (3 epochs)
 
 ```bash
 python train_bart_large.py
 ```
 
-### 📊 Évaluation (ROUGE scores)
+### 📊 Evaluation (ROUGE scores)
 
 ```bash
 python test_bart_large.py
 ```
 
-📂 Les graphiques d'entrainement et de performance ROUGE seront automatiquement sauvegardés dans le dossier :
+📂 Training and ROUGE performance plots will be automatically saved in the folder:
 
 ```text
 plots_bart_Large/
 ```
+
+---
+
