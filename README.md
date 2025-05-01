@@ -43,7 +43,8 @@ https://arxiv.org/pdf/1910.13461
 ## 📥 Downloading the Training Dataset
 
 ```text
-Download the [corpus.csv](https://www.kaggle.com/datasets/manueldesiretaira/dataset-for-text-summarization/data) file from Kaggle and place it at the root of the project directory.  
+Download the [corpus.csv](https://www.kaggle.com/datasets/manueldesiretaira/dataset-for-text-summarization/data) file from Kaggle,
+and place it at the root of the project directory.  
 You can then proceed with training and evaluation.
 ```
 
